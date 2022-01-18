@@ -37,3 +37,15 @@ header .header-icons-container{
     display: grid;
     background-color: var(--color-prymary);
 }
+header .header-icons-container .icons{
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+    font-size: var(--font-laarge);
+    margin-right: 50px;
+    
+}
