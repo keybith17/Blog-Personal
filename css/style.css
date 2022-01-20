@@ -12,6 +12,7 @@ html{
     --font-laarge: 1.6rem;
     --color-prymary: #47cfac;
     --color-black: #000000;
+    --color-white: #ffffff;
 }
 body{
     position: fixed;
@@ -77,4 +78,22 @@ nav .profile-link {
 nav .profile-link a{
     color: var(--color-black);
     border-bottom: 1px solid black;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(19, 1fr);
+    height: 100vh;
+}
+main .button{
+    grid-column: 7 / 8;
+    grid-row: 7 / 8;
+    background-color: var(--color-prymary);
+    color: var(--color-black);
+    border: none;
+    border: solid 1px var(--color-white);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: var(--font-medium);
+    z-index: 3;
 }
