@@ -10,6 +10,7 @@ html{
     --font-small: 1.2rem;
     --font-medium:1.4rem;
     --font-laarge: 1.6rem;
+    --font-bigger: 2rem;
     --color-prymary: #47cfac;
     --color-black: #000000;
     --color-white: #ffffff;
@@ -58,7 +59,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 90px;
-    font-size: var(--font-laarge);
+    font-size: var(--font-bigger);
 }
 nav .nav-logo-container {
     margin-left: 50px;
@@ -74,26 +75,55 @@ nav .profile-link {
     align-items: center;
     justify-content: flex-end;
     margin-right: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: var(--font-laarge);
 }
 nav .profile-link a{
     color: var(--color-black);
     border-bottom: 1px solid black;
+    
 }
 main{
     display: grid;
-    grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(19, 1fr);
-    height: 100vh;
+}
+main .main-conten{
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    height: 100vh; 
+
 }
 main .button{
-    grid-column: 7 / 8;
-    grid-row: 7 / 8;
+    width: 100px;
+    height: 40px;
+    grid-column: 8 / 9;
+    grid-row: 6 / 7;
     background-color: var(--color-prymary);
     color: var(--color-black);
     border: none;
     border: solid 1px var(--color-white);
-    border-radius: 4px;
+    border-radius: 2px;
     font-weight: bold;
     font-size: var(--font-medium);
     z-index: 3;
+}
+main .text{
+    z-index: 2;
+    font-size: 4rem;
+    color: var(--color-white);
+    grid-column: 4 / 13;
+    grid-row: 2 / 3;
+    place-self: center;
+    font-family: monospace;
+    letter-spacing: 10PX;
+}
+main .main-conten-cover{
+    grid-column: 1 / 16 ;
+    grid-row: 1 / 14;
+    z-index: 1;
+    background-image: url("/asset/picture/Cover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
